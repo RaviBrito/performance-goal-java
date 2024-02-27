@@ -35,7 +35,7 @@ public class Cadernos extends Produto implements ProdutoRepository {
     }
 
     @Override
-    public void listarTodas() {
+    public void listarTodos() {
 
     }
 
@@ -54,16 +54,19 @@ public class Cadernos extends Produto implements ProdutoRepository {
 
     }
 
-    public void reposiçãoProduto(int quantidade) { //adcionando produto
-        this.setEstoque(this.getEstoque() + quantidade);
+    @Override
+    public void exibirFicha() {
+        super.exibirFicha();
     }
 
-    public boolean vendaProduto(int quantidade) {   //subtraindo produto
-        if (this.getEstoque() < quantidade) {
-            return false;
-        } else {
-            this.setEstoque(this.getEstoque() - quantidade);
-            return true;
-        }
+    @Override
+    public void reposiçãoProduto(int quantidade) {
+        super.reposiçãoProduto(quantidade);
     }
+
+    @Override
+    public boolean vendaProduto(int quantidade) {
+        return super.vendaProduto(quantidade);
+    }
+
 }

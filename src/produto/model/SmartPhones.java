@@ -37,7 +37,7 @@ public class SmartPhones extends Produto implements ProdutoRepository {
     }
 
     @Override
-    public void listarTodas() {
+    public void listarTodos() {
 
     }
 
@@ -54,5 +54,19 @@ public class SmartPhones extends Produto implements ProdutoRepository {
     @Override
     public void deletar(int numero) {
 
+    }
+    @Override
+    public void exibirFicha() {
+        super.exibirFicha();
+    }
+
+    @Override
+    public void reposiçãoProduto(int quantidade) {
+        super.reposiçãoProduto(quantidade);
+    }
+
+    @Override
+    public boolean vendaProduto(int quantidade) {
+        return super.vendaProduto(quantidade);
     }
 }

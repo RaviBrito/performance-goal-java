@@ -5,7 +5,7 @@ import produto.model.Produto;
 public interface ProdutoRepository {
     //CRUD - CRIAR LER PROCESSAR DELETAR
     public void cadastrar(Produto novoProduto);
-    public void listarTodas();
+    public void listarTodos();
     public void procurarPorCod (int numero);
     public void atualizar(Produto novoProduto);
     public void deletar(int numero);

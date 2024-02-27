@@ -1,6 +1,8 @@
 package produto.model;
 
-public class Produto {
+import produto.repository.ProdutoRepository;
+
+public abstract class Produto implements ProdutoRepository {
     private int codProduto;
     private String nomeProduto;
     private String descriçao;

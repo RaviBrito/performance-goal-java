@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b81aa00-7eb8-44d6-9e7c-a17ab0cca51b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/produto/util/Cores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/produto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/produto/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/model/Cadernos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/model/Cadernos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/model/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/produto/model/SmartPhones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/model/SmartPhones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/repository/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/repository/ProdutoRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2cwyYBvCxTLMe7nBdXOF71yrKdk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "variaveis-lacos",
+    "git-widget-placeholder": "poo",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ravib/Repositorio Local/contaBancaria",
     "node.js.detected.package.eslint": "true",
@@ -61,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709036982881</updated>
       <workItem from="1709036983946" duration="8765000" />
+      <workItem from="1709045793966" duration="6638000" />
     </task>
     <servers />
   </component>
@@ -74,6 +79,11 @@
           <properties class="java.util.InputMismatchException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/produto/Main.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
