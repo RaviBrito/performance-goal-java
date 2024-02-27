@@ -3,16 +3,15 @@ package produto.model;
 import produto.repository.ProdutoRepository;
 
 public class SmartPhones extends Produto implements ProdutoRepository {
-    public SmartPhones(int codProduto, String nomeProduto, String descriçao, float valor, int estoque, int anoLançamento, int marca, boolean temCamera) {
+    public SmartPhones(int codProduto, String nomeProduto, String descriçao, float valor, int estoque, int anoLançamento, String marca) {
         super(codProduto, nomeProduto, descriçao, valor, estoque);
         this.anoLançamento = anoLançamento;
         this.marca = marca;
-        this.temCamera = temCamera;
+
     }
 
     int anoLançamento;
-    int marca;
-    boolean temCamera;
+    String marca;
 
     public int getAnoLançamento() {
         return anoLançamento;
@@ -22,21 +21,15 @@ public class SmartPhones extends Produto implements ProdutoRepository {
         this.anoLançamento = anoLançamento;
     }
 
-    public int getMarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public void setMarca(int marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public boolean isTemCamera() {
-        return temCamera;
-    }
 
-    public void setTemCamera(boolean temCamera) {
-        this.temCamera = temCamera;
-    }
 
     @Override
     public void cadastrar(Produto novoProduto) {

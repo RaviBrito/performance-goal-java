@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b81aa00-7eb8-44d6-9e7c-a17ab0cca51b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance-goals-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/model/Cadernos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/model/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/model/SmartPhones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/produto/repository/ProdutoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/produto/model/SmartPhones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/produto/model/SmartPhones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -69,11 +60,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709036982881</updated>
-      <workItem from="1709036983946" duration="5774000" />
+      <workItem from="1709036983946" duration="8765000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
