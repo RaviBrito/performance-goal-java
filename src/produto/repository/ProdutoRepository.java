@@ -11,8 +11,8 @@ public interface ProdutoRepository {
     public void deletar(int numero);
 
     //METODOS DO Produto
-    public void reposiçãoProduto (int quantidade);
-    public boolean vendaProduto (int quantidade);
+    public void reposiçãoProduto (int codigo, int quantidade);
+    public boolean vendaProduto (int codigo, int quantidade);
 
 
     }

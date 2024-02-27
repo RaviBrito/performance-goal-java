@@ -158,23 +158,36 @@ public class Main {
 
 
                 case 5://Apagar
-                    System.out.println("Voce deletou" + produto);
+                    System.out.println("Deletar Produto");
+                    System.out.println("Insira o código do produto que deseja deletar:");
+                    numeroInput= read.nextInt();
+                    produto.deletar(numeroInput);
                     keyPress();
                     break;
 
                 case 6://Saida estoque
                    // estoque -= qtdsaida;
-                    System.out.println("Quantidade no estoque:");
+                    System.out.println("Venda ou Saida do estoque");
+                    System.out.println("Insira o  codigo do produto:");
+                    numeroInput= read.nextInt();
+                    do {System.out.println("Quantidade:");
+                        qtdsaida = read.nextInt();
+
+                    }while (qtdsaida<=0);
+                    produto.vendaProduto(numeroInput, qtdsaida);
+
                     keyPress();
                     break;
 
                 case 7://Incluir estoque
-                    System.out.println("Insira o codigo do produto que deja incluir");
+                    System.out.println("Deposito");
+                    System.out.println("Insira o codigo do produto que deseja incluir");
                     numeroInput = read.nextInt();
-                    produto.buscarNaCollection(numeroInput);
-
-                    System.out.println("Insira a quantidade");
-                    estoque = read.nextInt();
+                    do {
+                        System.out.println("Insira a quantidade");
+                        estoque = read.nextInt();
+                    }while (estoque <=0);
+                    produto.reposiçãoProduto(numeroInput, estoque);
 
                     keyPress();
                     break;

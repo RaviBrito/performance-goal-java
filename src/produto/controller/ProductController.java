@@ -54,16 +54,43 @@ public class ProductController implements ProdutoRepository {
 
     @Override
     public void deletar(int numero) {
+        var produto = buscarNaCollection(numero);
+
+        if (produto!= null){
+            if (listaProdutos.remove(produto) == true){
+                System.out.println("Produto codigo: "+numero+" removido com sucesso.");
+            }else {
+                System.out.println("Produto codigo: "+numero+" não foi encontrado.");
+            }
+        }
 
     }
 
     @Override
-    public void reposiçãoProduto(int quantidade) {
+    public void reposiçãoProduto(int numero, int quantidade) {
+        var produto =buscarNaCollection(numero);
+
+        if (produto != null){
+            produto.reposiçãoProduto(quantidade);
+            System.out.println("Voce incluiu" + quantidade + "do produto" + numero);
+          }else {
+            System.out.println("Produto codigo:" + numero +" não foi localizado no sistema");
+        }
 
     }
 
     @Override
-    public boolean vendaProduto(int quantidade) {
+    public boolean vendaProduto(int numero,int quantidade) {
+        var produto=buscarNaCollection(numero);
+
+        if (produto != null){
+            if (produto.vendaProduto(quantidade) == true){
+                System.out.println("\n Venda do produto: " + numero + "foi efetuada.");
+            }
+        }else {
+            System.out.println("Produto" + "não encontrado.");
+        }
+
         return false;
     }
     public int gerarCod(){
