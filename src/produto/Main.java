@@ -83,7 +83,7 @@ public class Main {
                     codProduto = read.nextInt();
                     System.out.println("Insira o valor do produto");
                     valor = read.nextFloat();
-                    System.out.println("Insira o estoque do produto");
+                    System.out.println("Insira quantidade em estoque");
                     estoque = read.nextInt();
 
                     //TIPO DO PRODUTO
@@ -129,8 +129,30 @@ public class Main {
 
 
                 case 4://Atualizar
-                    System.out.println("Digite o numero do produto a ser atualizado:");
+                    System.out.println("Atualizar Produto");
                     numeroInput = read.nextInt();
+
+                    var buscarproduto = produto.buscarNaCollection(numeroInput);
+
+                    if (buscarproduto != null){
+                        System.out.println("Digite o numero do produto a ser atualizado:");
+                        codProduto= read.nextInt();
+                        System.out.println("Insira o nome do produto");
+                        read.skip("\\R?");   //skip para ignorar "\r" quebra de linha e ler palavras compostas
+                        nomeProduto = read.nextLine();
+                        System.out.println("Insira a decrição do produto");
+                        descricao = read.nextLine();
+                        System.out.println(" Insira o codigo do produto");
+                        codProduto = read.nextInt();
+                        System.out.println("Insira o valor do produto");
+                        valor = read.nextFloat();
+                        System.out.println("Insira quantidade em estoque");
+                        estoque = read.nextInt();
+
+
+                    }else {
+                        System.out.println("Produto não encontrado");
+                    }
                 keyPress();
                 break;
 
